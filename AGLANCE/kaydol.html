@@ -1,0 +1,64 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Kaydol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="kaydol.css">
+</head>
+<body>
+  <div class="sayfa">
+    <div class="ustbaslik">
+        
+            <div class="simge"><a href="index.html"><p>AGLANCE</p></a></div>
+       
+        <ul>
+                <li><a href="info.html">Hakkımızda </a></li>
+                <li><a href="Help.html">Destek</a></li>
+                <li><a href="oturumac.html">Oturum Aç</a></li>
+                <li><a href="kaydol.html">Kayıt Ol</a></li>
+                <li><a href="Gizlilik.html">Gizlilik</a></li>
+        </ul>
+       
+     </div>
+<form name="Hesap Bilgileriniz" action="oturumac.html" method="get">
+  
+  <fieldset>
+           <legend>Hesap Bilgileriniz</legend>
+           <label> Adınız : </label><input type="text"/><br/><br/>
+           <label>Soyadınız :</label><input type="text"/><br/><br/>
+           <label>E Posta : </label><input type="text"/><br/><br/>
+           <label>Doğum Gününüz: </label>
+           <input type="date" name="doğum tarihi" required="required"> <br/><br/>
+           <label>Şifreniz : </label><input type="password"> <br/><br/>
+           <label>Hesabınız kim için : </label><select name="Kişiler" size="1">
+            <option value="b1">Kendim</option>
+            <option value="b2">İş</option>
+            <option value="b3">Çocuğum</option>
+    
+           </select> <br/><br/>
+           <br/><br/>
+           <input type="submit" value="Gönder"><input type="reset" value="Temizle">      
+    </fieldset>
+  
+
+</form>
+<div style="text-align: center;">
+  <img src="security.png" style="position: absolute; left: 550px; top: 200px;" >
+</div>
+
+<style>
+    body {
+      background-color:rgb(255, 139, 94);
+    }
+    form {
+  width: 350px; 
+    }
+    fieldset
+    {
+      position: absolute; 
+    left: 250px;
+    top: 240px;
+    }
+ 
+    </style>
+</body>
+</html>

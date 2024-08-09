@@ -1,0 +1,71 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Gizlilik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gizlilik.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="gizlilik.js"></script>
+
+</head>
+<body>
+
+    <div class="sayfa">
+        <div class="ustbaslik">
+            
+                <div class="simge"><a href="index.html"><p>AGLANCE</p></a></div>
+           
+            <ul>
+                    <li><a href="info.html">Hakkımızda </a></li>
+                    <li><a href="Help.html">Destek</a></li>
+                    <li><a href="oturumac.html">Oturum Aç</a></li>
+                    <li><a href="kaydol.html">Kayıt Ol</a></li>
+                    <li><a href="Gizlilik.html">Gizlilik</a></li>
+            </ul>
+           
+         </div>
+         <br>
+         <div class="btn-group">
+
+            <div class="btn-group dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Gizlilik</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="gizlilikpolitika.html">Gizlilik Politikası</a></li>
+                  <li><a class="dropdown-item" href="kullanimsartlari.html">Kullanım Şartları</a></li>
+                  <li><a class="dropdown-item" href="kaynak.html">Kaynak</a></li>
+                </ul>
+              </div>
+            
+              <div class="btn-group dropdown" id="güven">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="güvenlikButonu">Güvenlik</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="oturumac.html">Hesap Güvenliği</a></li>
+                  <li><a class="dropdown-item" href="oturumac.html">Veri Güvenliğiniz</a></li>
+                </ul>
+              </div>
+              <script>
+                 güvenlikButonu = document.getElementById('güvenlikButonu');
+              
+                güvenlikButonu.addEventListener('click', function() {
+                  alert('Güvenlik tercihleriniz için ilk önce oturum açmalısınız!');
+                });
+              </script>
+
+    </div>
+    <div id="gallery">
+        <img src="biz3.JPG" id="img1">
+         <img src="biz2.jpg" id="img2">
+         <img src="biz4.jpg" id="img3">
+       </div>
+
+
+        <div>
+           <input type="button" onmousemove="showimg1()" value="     BİR     " id="but1">
+             <input type="button" onmousemove="showimg2()" value="  BAKIŞTA  "id="but2">
+           <input type="button" onmousemove="showimg3()" value=" ŞİFRELEME "id="but3">
+        </div>
+<style>
+ 
+    </style>
+</body>
+</html>
